@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Code Compiler App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="compiler-container">
+    <h2>Online Code Compiler</h2>
+
+    <div class="controls">
+      <label for="languageSelect">Select Language:</label>
+      <select id="languageSelect">
+        <option value="0">Python</option>
+        <option value="4">JavaScript</option>
+        <option value="7">C</option>
+        <option value="77">C++</option>
+        <option value="8">Java</option>
+      </select>
+    </div>
+
+    <div class="editor-section">
+      <label for="codeEditor">Type Your Code:</label>
+      <textarea id="codeEditor" rows="12" placeholder="Write your code here..."></textarea>
+    </div>
+
+    <button id="compileBtn">Compile</button>
+
+    <div class="output-section">
+      <h3>OUTPUT:</h3>
+      <pre id="outputConsole">Output will appear here...</pre>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
